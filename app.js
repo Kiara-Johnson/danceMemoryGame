@@ -98,7 +98,7 @@ function checkMatch() {
     cards[cardTwoId].setAttribute("src", "images/blank.png");
     alert("Same card clicked");
   } 
-  if (chosenCard[0] == chosenCard[1]) {
+ else if (chosenCard[0] == chosenCard[1]) {
     cards[cardOneId].setAttribute("src", "images/blank.png");
     cards[cardTwoId].setAttribute("src", "images/blank.png");
     cards[cardOneId].removeEventListener("click", flipCard);
